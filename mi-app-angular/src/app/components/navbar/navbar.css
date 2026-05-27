@@ -1,0 +1,43 @@
+.navbar {
+    width: 90%;
+    margin: 20px auto;
+    padding: 18px 35px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(255,255,255,0.08);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    backdrop-filter: blur(12px);
+
+    border-radius: 20px;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #38bdf8;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    color: #38bdf8;
+}
+
+.activo {
+    color: #38bdf8 !important;
+}
