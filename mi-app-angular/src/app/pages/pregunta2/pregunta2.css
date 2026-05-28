@@ -6,7 +6,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    background: linear-gradient(135deg, #11998e, #38ef7d);
     min-height: 100vh;
 }
 
@@ -40,14 +40,14 @@ body{
 }
 
 h1{
-    color: #1e3c72;
+    color: #11998e;
     margin-bottom: 15px;
     font-size: 28px;
     text-align: center;
 }
 
 h2{
-    color: #1e3c72;
+    color: #11998e;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -81,25 +81,22 @@ input{
 }
 
 input:focus{
-    border-color: #2a5298;
-    box-shadow: 0 0 8px rgba(42,82,152,0.3);
+    border-color: #11998e;
+    box-shadow: 0 0 8px rgba(17,153,142,0.3);
 }
 
 .botones{
     margin-top: 25px;
-
-    display: flex;
-    gap: 15px;
 }
 
 button{
-    flex: 1;
+    width: 100%;
 
     padding: 12px;
     border: none;
     border-radius: 10px;
 
-    background-color: #1e3c72;
+    background-color: #11998e;
     color: white;
 
     font-size: 16px;
@@ -111,39 +108,20 @@ button{
 }
 
 button:hover{
-    background-color: #2a5298;
+    background-color: #0d7f75;
     transform: scale(1.03);
-}
-
-.secundario{
-    background-color: #777;
-}
-
-.secundario:hover{
-    background-color: #555;
-}
-
-.mensaje{
-    margin-top: 20px;
-    text-align: center;
-    font-weight: bold;
-    color: #1e3c72;
 }
 
 .resultados p{
     color: black;
     margin-bottom: 15px;
-    font-size: 17px;
+    font-size: 18px;
 }
 
-.estado{
+.categoria{
+    color: #e67e22;
+    font-weight: bold;
     font-size: 20px;
-    font-weight: bold;
-}
-
-.observacion{
-    color: #c0392b;
-    font-weight: bold;
 }
 
 @media(max-width: 900px){

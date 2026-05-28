@@ -1,1 +1,42 @@
-<p>pregunta1 works!</p>
+<main class="contenedor">
+    <section class="tarjeta">
+        <h1>Laboratorio Angular - Cálculo de Notas</h1>
+        <p class="descripcion">
+            Ingrese los datos del estudiante y sus cuatro notas.
+        </p>
+        <div class="formulario">
+            <label>Código del estudiante</label>
+            <input type="text" [(ngModel)]="cod">
+            <label>Nombre del estudiante</label>
+            <input type="text" [(ngModel)]="nombre">
+            <label>Nota 1</label>
+            <input type="number" [(ngModel)]="n1" min="0" max="20">
+            <label>Nota 2</label>
+            <input type="number" [(ngModel)]="n2" min="0" max="20">
+            <label>Nota 3</label>
+            <input type="number" [(ngModel)]="n3" min="0" max="20">
+            <label>Nota 4</label>
+            <input type="number" [(ngModel)]="n4" min="0" max="20">
+        </div>
+        <div class="botones">
+            <button (click)="procesar()">
+                Procesar
+            </button>
+            <button class="secundario" (click)="limpiarFormulario()">
+                Limpiar
+            </button>
+        </div>
+        <p class="mensaje">
+            {{ mensaje }}
+        </p>
+    </section>
+    <section class="tarjeta resultados">
+        <h2>Resultados</h2>
+        <p><strong>Suma:</strong> {{ suma }}</p>
+        <p><strong>Promedio:</strong> {{ promedio }}</p>
+        <p class="estado"><strong>Estado:</strong> {{ estado }}</p>
+        <p class="observacion"><strong>Observación:</strong> {{ observacion }}</p>
+
+    </section>
+
+</main>

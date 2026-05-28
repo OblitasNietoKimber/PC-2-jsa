@@ -1,0 +1,53 @@
+<main class="contenedor">
+
+    <section class="tarjeta">
+
+        <h1>Calculadora de IMC</h1>
+
+        <p class="descripcion">
+            Ingrese sus datos para calcular su índice de masa corporal.
+        </p>
+
+        <div class="formulario">
+
+            <label>Nombre</label>
+            <input type="text" [(ngModel)]="nombre">
+
+            <label>Correo electrónico</label>
+            <input type="email" [(ngModel)]="correo">
+
+            <label>Peso (kg)</label>
+            <input type="number" [(ngModel)]="peso">
+
+            <label>Altura (m)</label>
+            <input type="number" step="0.01" [(ngModel)]="altura">
+
+        </div>
+
+        <div class="botones">
+
+            <button (click)="procesar()">
+                Calcular IMC
+            </button>
+
+        </div>
+
+    </section>
+
+    <section class="tarjeta resultados">
+
+        <h2>Resultados</h2>
+
+        <p>
+            <strong>IMC:</strong>
+            {{ imc.toFixed(2) }}
+        </p>
+
+        <p class="categoria">
+            <strong>Categoría:</strong>
+            {{ categoria }}
+        </p>
+
+    </section>
+
+</main>
